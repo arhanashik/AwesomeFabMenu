@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="primary">#3c515c</color>
+    <color name="white">#FFFFFF</color>
+    <color name="scrim">#42000000</color>
+    <color name="pressed">#33000000</color>
+    <color name="teal_500_overlay">#88009688</color>
+    <color name="teal_400_overlay">#22009688</color>
+</resources>

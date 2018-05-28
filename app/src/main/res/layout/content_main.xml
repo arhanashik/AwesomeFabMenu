@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/message"
+        android:textColor="@color/primary"
+        android:textSize="20sp" />
+
+    <com.blackspider.util.widget.ClipRevealFrame
+        android:id="@+id/menu_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:layout_marginBottom="32dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/bg"/>
+
+        <com.blackspider.util.lib.archlayout.ArcLayout
+            android:id="@+id/arc_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="32dp"
+            app:arc_axisRadius="@dimen/layout_child_offset_path"
+            app:arc_freeAngle="true"
+            app:arc_origin="bottom"
+            app:arc_radius="@dimen/layout_radius_path">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:arc_angle="30"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btn_shoutout"
+                    style="@style/Item.Small"
+                    android:background="@drawable/ic_shoutout" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Shoutout"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:arc_angle="90"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btn_ask"
+                    style="@style/Item.Small"
+                    android:background="@drawable/ic_question" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ask"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:arc_angle="150"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btn_poll"
+                    style="@style/Item.Small"
+                    android:background="@drawable/ic_poll" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Poll"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+
+        </com.blackspider.util.lib.archlayout.ArcLayout>
+
+    </com.blackspider.util.widget.ClipRevealFrame>
+</RelativeLayout>
